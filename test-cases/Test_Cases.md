@@ -1,5 +1,11 @@
-1. Login
-TC-LOGIN-001 — Valid Login
+# E-Commerce QA Testing — Test Cases
+
+Site under test: [SauceDemo](https://www.saucedemo.com/) · Browser: Google Chrome · OS: Windows
+
+## 1. Login
+
+### TC-LOGIN-001 — Valid Login
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-LOGIN-001 |
@@ -11,7 +17,8 @@ TC-LOGIN-001 — Valid Login
 | **Actual Result** | User successfully logged in, and the Products page was displayed. |
 | **Status** | PASS |
 
-TC-LOGIN-002 — Invalid Username
+### TC-LOGIN-002 — Invalid Username
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-LOGIN-002 |
@@ -23,7 +30,8 @@ TC-LOGIN-002 — Invalid Username
 | **Actual Result** | Login was unsuccessful, and the Products page was not displayed. |
 | **Status** | PASS |
 
-TC-LOGIN-003 — Invalid Password
+### TC-LOGIN-003 — Invalid Password
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-LOGIN-003 |
@@ -35,7 +43,8 @@ TC-LOGIN-003 — Invalid Password
 | **Actual Result** | Login was unsuccessful, and the Products page was not displayed. |
 | **Status** | PASS |
 
-TC-LOGIN-004 — Missing Username
+### TC-LOGIN-004 — Missing Username
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-LOGIN-004 |
@@ -47,7 +56,8 @@ TC-LOGIN-004 — Missing Username
 | **Actual Result** | Login was rejected, an error message was displayed, and the Products page was not displayed. |
 | **Status** | PASS |
 
-TC-LOGIN-005 — Missing Password
+### TC-LOGIN-005 — Missing Password
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-LOGIN-005 |
@@ -59,7 +69,8 @@ TC-LOGIN-005 — Missing Password
 | **Actual Result** | Login was rejected, an error message was displayed, and the Products page was not displayed. |
 | **Status** | PASS |
 
-TC-LOGIN-006 — Both Fields Empty
+### TC-LOGIN-006 — Both Fields Empty
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-LOGIN-006 |
@@ -71,9 +82,10 @@ TC-LOGIN-006 — Both Fields Empty
 | **Actual Result** | Login was rejected, an error message was displayed, and the Products page was not displayed. |
 | **Status** | PASS |
 
+## 2. Product Catalog
 
-2. Product Catalog
-TC-PRODUCT-001 — Display Products
+### TC-PRODUCT-001 — Display Products
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-PRODUCT-001 |
@@ -85,7 +97,8 @@ TC-PRODUCT-001 — Display Products
 | **Actual Result** | The name, description, price, and image were displayed correctly for each product. |
 | **Status** | PASS |
 
-TC-PRODUCT-002 — Product Details
+### TC-PRODUCT-002 — Product Details
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-PRODUCT-002 |
@@ -97,7 +110,8 @@ TC-PRODUCT-002 — Product Details
 | **Actual Result** | The selected product's name, description, price, and image were displayed correctly and matched the selected product. |
 | **Status** | PASS |
 
-TC-PRODUCT-003 — Sort Name A to Z
+### TC-PRODUCT-003 — Sort Name A to Z
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-PRODUCT-003 |
@@ -109,7 +123,8 @@ TC-PRODUCT-003 — Sort Name A to Z
 | **Actual Result** | Products were displayed in alphabetical order from A to Z. |
 | **Status** | PASS |
 
-TC-PRODUCT-004 — Sort Name Z to A
+### TC-PRODUCT-004 — Sort Name Z to A
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-PRODUCT-004 |
@@ -121,7 +136,8 @@ TC-PRODUCT-004 — Sort Name Z to A
 | **Actual Result** | Products were displayed in alphabetical order from Z to A. |
 | **Status** | PASS |
 
-TC-PRODUCT-005 — Sort Price Low to High
+### TC-PRODUCT-005 — Sort Price Low to High
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-PRODUCT-005 |
@@ -133,7 +149,8 @@ TC-PRODUCT-005 — Sort Price Low to High
 | **Actual Result** | Products were displayed in ascending price order, from the lowest price to the highest price. |
 | **Status** | PASS |
 
-TC-PRODUCT-006 — Sort Price High to Low
+### TC-PRODUCT-006 — Sort Price High to Low
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-PRODUCT-006 |
@@ -145,7 +162,8 @@ TC-PRODUCT-006 — Sort Price High to Low
 | **Actual Result** | Products were displayed in descending price order, from the highest price to the lowest price. |
 | **Status** | PASS |
 
-TC-PRODUCT-007 — Add Product to Cart
+### TC-PRODUCT-007 — Add Product to Cart
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-PRODUCT-007 |
@@ -157,7 +175,8 @@ TC-PRODUCT-007 — Add Product to Cart
 | **Actual Result** | The button changed from "Add to cart" to "Remove", the shopping cart icon displayed a count of "1", and the selected product was displayed in the shopping cart. |
 | **Status** | PASS |
 
-TC-PRODUCT-008 — Remove Product
+### TC-PRODUCT-008 — Remove Product
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-PRODUCT-008 |
@@ -169,9 +188,10 @@ TC-PRODUCT-008 — Remove Product
 | **Actual Result** | The button changed from "Remove" to "Add", the shopping cart icon displayed a count of "0", and the selected product was removed from the shopping cart. |
 | **Status** | PASS |
 
+## 3. Shopping Cart
 
-3. Shopping Cart
-TC-CART-001 — Product Information, Quantity, and Price
+### TC-CART-001 — Product Information, Quantity, and Price
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-CART-001 |
@@ -183,7 +203,8 @@ TC-CART-001 — Product Information, Quantity, and Price
 | **Actual Result** | — |
 | **Status** | — |
 
-TC-CART-002 — Remove Product
+### TC-CART-002 — Remove Product
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-CART-002 |
@@ -195,7 +216,8 @@ TC-CART-002 — Remove Product
 | **Actual Result** | — |
 | **Status** | — |
 
-TC-CART-003 — Continue Shopping
+### TC-CART-003 — Continue Shopping
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-CART-003 |
@@ -207,7 +229,8 @@ TC-CART-003 — Continue Shopping
 | **Actual Result** | — |
 | **Status** | — |
 
-TC-CART-004 — Proceed to Checkout
+### TC-CART-004 — Proceed to Checkout
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-CART-004 |
@@ -219,7 +242,8 @@ TC-CART-004 — Proceed to Checkout
 | **Actual Result** | — |
 | **Status** | — |
 
-TC-CART-005 — Cart Updates
+### TC-CART-005 — Cart Updates
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-CART-005 |
@@ -231,9 +255,10 @@ TC-CART-005 — Cart Updates
 | **Actual Result** | — |
 | **Status** | — |
 
+## 4. Checkout
 
-4. Checkout
-TC-CHECKOUT-001 — Valid Checkout Information
+### TC-CHECKOUT-001 — Valid Checkout Information
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-CHECKOUT-001 |
@@ -245,7 +270,8 @@ TC-CHECKOUT-001 — Valid Checkout Information
 | **Actual Result** | — |
 | **Status** | — |
 
-TC-CHECKOUT-002 — Missing First Name
+### TC-CHECKOUT-002 — Missing First Name
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-CHECKOUT-002 |
@@ -257,7 +283,8 @@ TC-CHECKOUT-002 — Missing First Name
 | **Actual Result** | — |
 | **Status** | — |
 
-TC-CHECKOUT-003 — Missing Last Name
+### TC-CHECKOUT-003 — Missing Last Name
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-CHECKOUT-003 |
@@ -269,7 +296,8 @@ TC-CHECKOUT-003 — Missing Last Name
 | **Actual Result** | — |
 | **Status** | — |
 
-TC-CHECKOUT-004 — Missing Postal Code
+### TC-CHECKOUT-004 — Missing Postal Code
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-CHECKOUT-004 |
@@ -281,7 +309,8 @@ TC-CHECKOUT-004 — Missing Postal Code
 | **Actual Result** | — |
 | **Status** | — |
 
-TC-CHECKOUT-005 — Checkout Overview
+### TC-CHECKOUT-005 — Checkout Overview
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-CHECKOUT-005 |
@@ -293,7 +322,8 @@ TC-CHECKOUT-005 — Checkout Overview
 | **Actual Result** | — |
 | **Status** | — |
 
-TC-CHECKOUT-006 — Complete Order
+### TC-CHECKOUT-006 — Complete Order
+
 | Field | Value |
 |---|---|
 | **Test Case ID** | TC-CHECKOUT-006 |
