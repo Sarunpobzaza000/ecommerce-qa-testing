@@ -185,7 +185,7 @@ Site under test: [SauceDemo](https://www.saucedemo.com/) · Browser: Google Chro
 | **Test Data** | Any product already added to the shopping cart |
 | **Test Steps** | 1. Open the shopping cart.<br>2. Click the **Remove** button for the selected product.<br>3. Verify that the product is removed. |
 | **Expected Result** | The product should be removed from the shopping cart. |
-| **Actual Result** | The button changed from "Remove" to "Add", the shopping cart icon displayed a count of "0", and the selected product was removed from the shopping cart. |
+| **Actual Result** | The button changed from "Remove" to "Add to cart", the displayed shopping cart icon count disappeared, and the selected product was removed from the shopping cart. |
 | **Status** | PASS |
 
 ## 3. Shopping Cart
@@ -200,8 +200,8 @@ Site under test: [SauceDemo](https://www.saucedemo.com/) · Browser: Google Chro
 | **Test Data** | Any product already added to the shopping cart |
 | **Test Steps** | 1. Open the shopping cart.<br>2. Find the added product.<br>3. Verify that the product information, quantity, and price match the product that was added. |
 | **Expected Result** | The product information, quantity, and price should match the product that was added to the cart. |
-| **Actual Result** | — |
-| **Status** | — |
+| **Actual Result** | The product information, quantity, and price matched the product that was added to the cart. |
+| **Status** | PASS |
 
 ### TC-CART-002 — Remove Product
 
@@ -213,8 +213,8 @@ Site under test: [SauceDemo](https://www.saucedemo.com/) · Browser: Google Chro
 | **Test Data** | Any product already added to the shopping cart |
 | **Test Steps** | 1. Open the shopping cart.<br>2. Click the **Remove** button for the selected product.<br>3. Verify that the product is removed. |
 | **Expected Result** | The product should be removed from the shopping cart. |
-| **Actual Result** | — |
-| **Status** | — |
+| **Actual Result** | The product was removed from the shopping cart. |
+| **Status** | PASS |
 
 ### TC-CART-003 — Continue Shopping
 
@@ -226,8 +226,8 @@ Site under test: [SauceDemo](https://www.saucedemo.com/) · Browser: Google Chro
 | **Test Data** | None |
 | **Test Steps** | 1. Open the shopping cart.<br>2. Click the **Continue Shopping** button.<br>3. Verify that the user is returned to the Products page. |
 | **Expected Result** | The user should be returned to the Products page. |
-| **Actual Result** | — |
-| **Status** | — |
+| **Actual Result** | The Products page displayed after returning from the Shopping Cart page. |
+| **Status** | PASS |
 
 ### TC-CART-004 — Proceed to Checkout
 
@@ -239,8 +239,8 @@ Site under test: [SauceDemo](https://www.saucedemo.com/) · Browser: Google Chro
 | **Test Data** | None |
 | **Test Steps** | 1. Open the shopping cart.<br>2. Click the **Checkout** button.<br>3. Verify that the user is navigated to the Checkout page. |
 | **Expected Result** | The user should be navigated to the Checkout page. |
-| **Actual Result** | — |
-| **Status** | — |
+| **Actual Result** | The Shopping Cart page was navigated to the Checkout page. |
+| **Status** | PASS |
 
 ### TC-CART-005 — Cart Updates
 
@@ -252,8 +252,8 @@ Site under test: [SauceDemo](https://www.saucedemo.com/) · Browser: Google Chro
 | **Test Data** | Any two products |
 | **Test Steps** | 1. Add Product A to the shopping cart.<br>2. Open the shopping cart and verify that Product A is displayed.<br>3. Return to the Products page.<br>4. Add Product B to the shopping cart.<br>5. Open the shopping cart and verify that Product A and Product B are displayed.<br>6. Remove Product A from the shopping cart.<br>7. Verify that Product A is removed and Product B remains in the cart. |
 | **Expected Result** | After each add or remove action, the shopping cart should display the correct products. Product A should appear after it is added, Product B should appear after it is added, and Product A should no longer appear after it is removed while Product B remains in the cart. |
-| **Actual Result** | — |
-| **Status** | — |
+| **Actual Result** | After each add or remove action, the shopping cart displayed the correct products. Product A appeared after it was added, Product B appeared after it was added, and Product A did not longer appear after it was removed while Product B remained in the cart. |
+| **Status** | PASS |
 
 ## 4. Checkout
 
