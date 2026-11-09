@@ -252,7 +252,7 @@ Site under test: [SauceDemo](https://www.saucedemo.com/) · Browser: Google Chro
 | **Test Data** | Any two products |
 | **Test Steps** | 1. Add Product A to the shopping cart.<br>2. Open the shopping cart and verify that Product A is displayed.<br>3. Return to the Products page.<br>4. Add Product B to the shopping cart.<br>5. Open the shopping cart and verify that Product A and Product B are displayed.<br>6. Remove Product A from the shopping cart.<br>7. Verify that Product A is removed and Product B remains in the cart. |
 | **Expected Result** | After each add or remove action, the shopping cart should display the correct products. Product A should appear after it is added, Product B should appear after it is added, and Product A should no longer appear after it is removed while Product B remains in the cart. |
-| **Actual Result** | After each add or remove action, the shopping cart displayed the correct products. Product A appeared after it was added, Product B appeared after it was added, and Product A did not longer appear after it was removed while Product B remained in the cart. |
+| **Actual Result** | After each add or remove action, the shopping cart displayed the correct products. Product A appeared after it was added, Product B appeared after it was added, and Product A no longer appeared after it was removed while Product B remained in the cart. |
 | **Status** | PASS |
 
 ## 4. Checkout
@@ -319,7 +319,7 @@ Site under test: [SauceDemo](https://www.saucedemo.com/) · Browser: Google Chro
 | **Test Data** | Any product added to the shopping cart |
 | **Test Steps** | 1. Verify that the product name, description, quantity, and price match the selected product.<br>2. Verify that the subtotal equals the sum of the product prices.<br>3. Verify that the displayed tax is calculated correctly.<br>4. Verify that the total equals the subtotal plus the tax. |
 | **Expected Result** | The Checkout Overview should display the correct product information, quantity, and price. The subtotal, tax, and total should also be calculated and displayed correctly. |
-| **Actual Result** | The Checkout Overview displayed the correct product information, quantity, and price. The subtotal, tax, and total also was calculated and displayed correctly. |
+| **Actual Result** | The Checkout Overview displayed the correct product information, quantity, and price. The subtotal, tax, and total were also calculated and displayed correctly “Item total $29.99, Tax $2.40, Total $32.39 (tax = 8% of item total).”|
 | **Status** | PASS |
 
 ### TC-CHECKOUT-006 — Complete Order
