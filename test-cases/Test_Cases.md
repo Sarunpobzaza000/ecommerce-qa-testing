@@ -267,8 +267,8 @@ Site under test: [SauceDemo](https://www.saucedemo.com/) · Browser: Google Chro
 | **Test Data** | Valid first name, last name, and postal code |
 | **Test Steps** | 1. Open the shopping cart.<br>2. Click the **Checkout** button.<br>3. Verify that the user is navigated to the Checkout page.<br>4. Enter a valid first name, last name, and postal code.<br>5. Click the **Continue** button.<br>6. Verify that the user is navigated to the Checkout Overview page. |
 | **Expected Result** | The checkout information should be accepted, and the user should be navigated to the Checkout Overview page. |
-| **Actual Result** | — |
-| **Status** | — |
+| **Actual Result** | The checkout information was accepted, and the Checkout page was navigated to the Checkout Overview page. |
+| **Status** | PASS |
 
 ### TC-CHECKOUT-002 — Missing First Name
 
@@ -280,8 +280,8 @@ Site under test: [SauceDemo](https://www.saucedemo.com/) · Browser: Google Chro
 | **Test Data** | Empty first name, valid last name, and valid postal code |
 | **Test Steps** | 1. Leave the **First Name** field empty.<br>2. Enter a valid last name.<br>3. Enter a valid postal code.<br>4. Click the **Continue** button. |
 | **Expected Result** | The checkout information should be rejected, and an appropriate validation/error message should be displayed. |
-| **Actual Result** | — |
-| **Status** | — |
+| **Actual Result** | The checkout information was rejected, and an error message "Error: First Name is required" was displayed. |
+| **Status** | PASS |
 
 ### TC-CHECKOUT-003 — Missing Last Name
 
@@ -293,8 +293,8 @@ Site under test: [SauceDemo](https://www.saucedemo.com/) · Browser: Google Chro
 | **Test Data** | Valid first name, empty last name, and valid postal code |
 | **Test Steps** | 1. Enter a valid **First Name**.<br>2. Leave the **Last Name** field empty.<br>3. Enter a valid postal code.<br>4. Click the **Continue** button. |
 | **Expected Result** | The checkout information should be rejected, and an appropriate validation/error message should be displayed. |
-| **Actual Result** | — |
-| **Status** | — |
+| **Actual Result** | The checkout information was rejected, and an error message "Error: Last Name is required" was displayed. |
+| **Status** | PASS |
 
 ### TC-CHECKOUT-004 — Missing Postal Code
 
@@ -306,8 +306,8 @@ Site under test: [SauceDemo](https://www.saucedemo.com/) · Browser: Google Chro
 | **Test Data** | Valid first name, valid last name, and empty postal code |
 | **Test Steps** | 1. Enter a valid **First Name**.<br>2. Enter a valid **Last Name**.<br>3. Leave the **Postal Code** field empty.<br>4. Click the **Continue** button. |
 | **Expected Result** | The checkout information should be rejected, and an appropriate validation/error message should be displayed. |
-| **Actual Result** | — |
-| **Status** | — |
+| **Actual Result** | The checkout information was rejected, and an error message "Error: Postal Code is required" was displayed. |
+| **Status** | PASS |
 
 ### TC-CHECKOUT-005 — Checkout Overview
 
@@ -319,8 +319,8 @@ Site under test: [SauceDemo](https://www.saucedemo.com/) · Browser: Google Chro
 | **Test Data** | Any product added to the shopping cart |
 | **Test Steps** | 1. Verify that the product name, description, quantity, and price match the selected product.<br>2. Verify that the subtotal equals the sum of the product prices.<br>3. Verify that the displayed tax is calculated correctly.<br>4. Verify that the total equals the subtotal plus the tax. |
 | **Expected Result** | The Checkout Overview should display the correct product information, quantity, and price. The subtotal, tax, and total should also be calculated and displayed correctly. |
-| **Actual Result** | — |
-| **Status** | — |
+| **Actual Result** | The Checkout Overview displayed the correct product information, quantity, and price. The subtotal, tax, and total also was calculated and displayed correctly. |
+| **Status** | PASS |
 
 ### TC-CHECKOUT-006 — Complete Order
 
@@ -332,5 +332,5 @@ Site under test: [SauceDemo](https://www.saucedemo.com/) · Browser: Google Chro
 | **Test Data** | Any product added to the shopping cart |
 | **Test Steps** | 1. Click the **Finish** button.<br>2. Verify that the user is navigated to the **Checkout Complete** page. |
 | **Expected Result** | The Checkout Complete page should be displayed with an order confirmation message. |
-| **Actual Result** | — |
-| **Status** | — |
+| **Actual Result** | The Checkout Complete page was displayed with an order confirmation message "Thank you for your order! Your order has been dispatched, and will arrive just as fast as the pony can get there!". |
+| **Status** | PASS |
